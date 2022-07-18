@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome Shaan
+  </h1>
+  <button (click)="ChecklocalHealth()">
+    localHealth
+  </button>
+  {{localHealth}}
+  <button (click)="checkhealth()">
+    health
+  </button>
+  {{healthResponse}}
+  <button (click)="checkHealthapi()">
+    healthApi
+  </button>
+  {{apiHealthResponse}}
+  <button (click)="checkUserDetails()">
+    healthUserDetails
+  </button>
+  {{UserDetails}}
+</div>
+
+<router-outlet></router-outlet>

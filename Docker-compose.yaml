@@ -1,0 +1,13 @@
+version: '3'
+services: 
+    client-app:
+        image: sravanreddyguduru7/angular-client:v1.11
+        container_name: client-container
+        build: 
+            dockerfile: Dockerfile.prod
+            context: ./
+        ports:  
+        - "4200:80"
+        volumes: 
+            - /usr/angular/node_modules
+            - .:/usr/angular
